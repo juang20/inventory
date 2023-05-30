@@ -1,0 +1,172 @@
+body {
+	margin: 0;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 1rem;
+	color: #212529;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+}
+
+main {
+	display: flex;
+	flex-wrap: nowrap;
+	height: -webkit-fill-availeble;
+	max-height: 100vh;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+
+/*sidebar*/
+.sidebar {
+	z-index: 3;
+	position: fixed;
+	left: 0px;
+	width: 250px;
+	height: 100%;
+	background: #146C94;
+	transition: all 0.5s ease;
+}
+
+.sidebar .top {
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	line-height: 70px;
+	background-image: linear-gradient(to right, #146C94, #AFD3E2)
+}
+
+.sidebar ul a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 65px;
+	font-size: 20px;
+	color: #fff;
+	padding-left: 40px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(6, 255, 251, 0.1);
+	border-bottom: 1px solid rgba(125, 134, 146, 0.302);
+	transition: all 0.5s ease;
+}
+
+ul li:hover a {
+	padding-left: 100px;
+	background: #F6F1F1;
+	color: rgb(0, 0, 0);
+}
+
+.sidebar ul a i {
+	margin-right: 16px;
+}
+
+
+
+
+/* SETTING BUTTON ON OF SIDE BAR*/
+#check {
+	display: none;
+}
+
+label #btn {
+	position: fixed;
+	cursor: pointer;
+	background: #ffffff;
+	border-radius: 3px;
+}
+
+label #open {
+	position: fixed;
+	cursor: pointer;
+	background: #924227;
+	border-radius: 1px;
+	font-size: 30px;
+}
+
+label #open {
+	left: 0;
+	top: 10;
+	font-size: 30px;
+	color: rgb(255, 255, 255);
+	padding: 6px 12px;
+	transition: all 0.5s ease;
+}
+
+label #btn {
+	z-index: 1111;
+	left: 195px;
+	top: 25px;
+	font-size: 20px;
+	color: #000000;
+	padding: 4px 9px;
+	transition: all 0.5s ease;
+}
+
+#check:checked~.sidebar {
+	left: -250px;
+}
+
+#check:checked~label #open {
+	left: 0px;
+	font-size: 20px;
+	z-index: 1111;
+}
+
+#check:checked~label #btn {
+    left:-195px;
+}
+
+section {
+    background: #ffffff;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+section h1 {
+    text-align: center;
+    padding-top: 200px;
+    font-size: 60px;
+    color: #004369;
+}
+
+/*topbar*/
+.topbar {
+	display: fixed;
+	flex-direction: row-reverse;
+	height: 70px;
+	width: 100%;
+	background-color: #afd3e1;
+	position: fixed;
+	line-height: 70px;
+}
+
+.menu-wrapper {
+	float: right;
+}
+
+.btn-logout{
+	display: inline-block;
+	color: white;
+	font-size: 17px;
+	background-color: white;
+	height: 70px;
+	width: 100px;
+	background-image: linear-gradient(to left, #146C94, #AFD3E2);
+	padding-left: 40px;
+}
+
+.btn-logout:hover {
+	color: yellow;
+}
+
+
+

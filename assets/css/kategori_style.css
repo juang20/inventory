@@ -1,0 +1,64 @@
+.content-kategori {
+	margin-top: 100px;
+	margin-left: 270px;
+}
+
+.wrapper {
+	background-color: ghostwhite;
+	width: 1060px;
+	padding: 20px 5px;
+
+}
+
+.btn-tambah-item {
+	display: inline-block;
+	background-color: #19a7ce;
+	color: white;
+	height: 50px;
+	width: 150px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+/*tabel*/
+.tabel-item {
+
+	font-family: sans-serif;
+	color: #444;
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #f2f5f7;
+	margin-top: 30px;
+}
+
+.tabel-item tr th {
+	background: #35a9db;
+	color: #fff;
+	font-weight: normal;
+}
+
+.tabel-item, th, td {
+	padding: 8px 20px;
+	text-align: left;
+}
+
+.tabel-item tr:hover {
+	background-color: #f5f5f5;
+}
+
+.tabel-item tr:nth-child(even) {
+	background-color: #DDE6ED;
+}
+
+
+.btn-tambah-kategori {
+	display: inline-block;
+	height: 70px;
+}
+
+
+.tabel-item, input[type=submit] {
+	margin: 40px;
+}
